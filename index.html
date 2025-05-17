@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+
+        <div class="display-content">
+            <input readonly placeholder="password" class="display" data-password-dsplay> 
+            <!-- data-password-dsplay = custom attribute -->
+
+            <button>
+                <span data-copyMsg></span>
+                <img src="./assets/copy.svg" alt="copy" width="23" height="23">
+            </button>
+        </div>
+
+        <div class="input-container">
+            <!--password length-->
+            <div class="length-container">
+                <p>Password Length</p>
+                <p data-length>0</p>
+            </div>
+
+            <!--slider-->
+            <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
+
+            <!--Checkbox-->
+            <div>
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">Includers Uppercase Letters</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="uppercase">
+                <label for="lowercase">Includers Lowercase Letters</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="uppercase">
+                <label for="numbers">Includers Numbers Letters</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="uppercase">
+                <label for="symbols">Includers Symbols Letters</label>
+            </div>
+
+            <!--strength-->
+            <div class="strenght-container">
+                <p>Strength</p>
+                <div data-indicator></div>
+            </div>
+
+            <!--button-->
+            <button class="generateButton">Generate Password</button>
+        </div>
+
+        
+
+        
+    </div>
+</body>
+</html>
