@@ -10,10 +10,10 @@
         <h1>Password Generator</h1>
 
         <div class="display-content">
-            <input readonly placeholder="password" class="display" data-password-dsplay> 
+            <input type="text" readonly placeholder="password" class="display" data-passwordDisplay> 
             <!-- data-password-dsplay = custom attribute -->
 
-            <button>
+            <button data-copy>
                 <span data-copyMsg></span>
                 <img src="./assets/copy.svg" alt="copy" width="23" height="23">
             </button>
@@ -23,7 +23,7 @@
             <!--password length-->
             <div class="length-container">
                 <p>Password Length</p>
-                <p data-length>0</p>
+                <p data-lengthNumber>0</p>
             </div>
 
             <!--slider-->
@@ -36,17 +36,17 @@
             </div>
 
             <div>
-                <input type="checkbox" id="uppercase">
+                <input type="checkbox" id="lowercase">
                 <label for="lowercase">Includers Lowercase Letters</label>
             </div>
 
             <div>
-                <input type="checkbox" id="uppercase">
+                <input type="checkbox" id="numbers">
                 <label for="numbers">Includers Numbers Letters</label>
             </div>
 
             <div>
-                <input type="checkbox" id="uppercase">
+                <input type="checkbox" id="symbols">
                 <label for="symbols">Includers Symbols Letters</label>
             </div>
 
@@ -64,5 +64,7 @@
 
         
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
