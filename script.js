@@ -48,14 +48,14 @@ function generateRandomNumber() {
 
 
 function generateLowercase(){
-    return String.fromCharCode(generateRandomNumber(97, 123)) 
+    return String.fromCharCode(getRandomInteger(97, 123)) 
     //97-a
     //123-z
     //converted ascii value number to character
 }
 
 function generateUppercase(){
-    return String.fromCharCode(generateRandomNumber(65, 91)) 
+    return String.fromCharCode(getRandomInteger(65, 91)) 
     //for A and Z
 }
 
@@ -110,7 +110,9 @@ function shufflePassword(array){
     //algo is availiable
     //fisher yates method = apply on array to shuffle it
     for (let i = array.length - 1; i > 0 ; i--) {
+        //find random j
         const j = Math.floor(Math.random() * (i+1))
+        //do swapping
         const temp = array[i]
         array[i] = array[j]
         array[j] = temp

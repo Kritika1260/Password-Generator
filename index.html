@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Password Generator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h1>Password Generator</h1>
 
-        <div class="display-content">
+        <div class="display-container">
             <input type="text" readonly placeholder="password" class="display" data-passwordDisplay> 
             <!-- data-password-dsplay = custom attribute -->
 
@@ -32,22 +38,22 @@
             <!--Checkbox-->
             <div>
                 <input type="checkbox" id="uppercase">
-                <label for="uppercase">Includers Uppercase Letters</label>
+                <label for="uppercase">Includes Uppercase Letters</label>
             </div>
 
             <div>
                 <input type="checkbox" id="lowercase">
-                <label for="lowercase">Includers Lowercase Letters</label>
+                <label for="lowercase">Includes Lowercase Letters</label>
             </div>
 
             <div>
                 <input type="checkbox" id="numbers">
-                <label for="numbers">Includers Numbers Letters</label>
+                <label for="numbers">Includes Numbers</label>
             </div>
 
             <div>
                 <input type="checkbox" id="symbols">
-                <label for="symbols">Includers Symbols Letters</label>
+                <label for="symbols">Includes Symbols</label>
             </div>
 
             <!--strength-->
