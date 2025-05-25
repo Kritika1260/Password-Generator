@@ -18,6 +18,7 @@ let passwordLength = 10
 let checkCount = 0 
 handleSlider()
 //set strength colour to grey
+setIndicator("#ccc")
 
 //set password length according to the slider value
 //password length ko ui pr reflect krwata h
@@ -28,7 +29,7 @@ function handleSlider(){
 
 function setIndicator(color){
     indicator.style.backgroundColor = color;
-    //set shadow
+    indicator.style.boxShadow = `0px 0px 12px 1px ${color}`
 }
 
 function getRandomInteger(min, max){
